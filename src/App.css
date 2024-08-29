@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos Globais */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Tela de Login */
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container button {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Tela de Admin */
+.admin-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+}
+
+.admin-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.admin-container th, .admin-container td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-container th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.admin-container button {
+  background-color: #28a745;
+  color: white;
+}
+
+.admin-container button:hover {
+  background-color: #218838;
+}
+
+/* Tela de Guest */
+.guest-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.guest-container h1 {
+  color: #007bff;
+}
+
+.guest-container p {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #666;
 }
